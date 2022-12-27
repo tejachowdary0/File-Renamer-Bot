@@ -17,8 +17,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 Telegram Link : https://t.me/vj_bots 
-Repo Link : https://t.me/anjel_neha
-License Link : https://t.me/anjel_neha
+Repo Link : https://github.com/Vijay14958/File-Renamer-Bot
+License Link : https://github.com/Vijay14958/File-Renamer-Bot
 """
 
 from asyncio import sleep
@@ -93,7 +93,7 @@ async def cb_handler(client, query: CallbackQuery):
     if data == "start":
         await query.message.edit_text(
             text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
-            reply_markup=InlineKeyboardMarkup( [[
+            reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton("😈 Developer 😈", callback_data='dev')
         ],[
         InlineKeyboardButton('📢 Updates', url='https://t.me/vj_bots'),
@@ -108,8 +108,8 @@ async def cb_handler(client, query: CallbackQuery):
         ],[
         InlineKeyboardButton("📝Admin-TG", url='https://t.me/anjel_neha')
         ]])
-                )
-            )
+                
+            
     elif data == "help":
         await query.message.edit_text(
             text=mr.HELP_TXT,
