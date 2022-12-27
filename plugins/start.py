@@ -156,9 +156,8 @@ async def cb_handler(client, query: CallbackQuery):
                ],[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
-               ]]
-            )
-        )
+               ]])
+
     elif data == "close":
         try:
             await query.message.delete()
